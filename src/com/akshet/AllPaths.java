@@ -62,7 +62,7 @@ public class AllPaths {
         // For Left
         if(col<3){
             // bool[rowB-row][colB-col]=false;
-            pathLeft = helperFunction(row,col+1,bool,s+"L",rowB,cgit olB);
+            pathLeft = helperFunction(row,col+1,bool,s+"L",rowB,colB);
         }
 
         // this is Backtracking
