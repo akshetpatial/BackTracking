@@ -62,9 +62,12 @@ public class AllPaths {
         // For Left
         if(col<3){
             // bool[rowB-row][colB-col]=false;
-            pathLeft = helperFunction(row,col+1,bool,s+"L",rowB,colB);
+            pathLeft = helperFunction(row,col+1,bool,s+"L",rowB,cgit olB);
         }
 
+        // this is Backtracking
+        // Now Here as we will be out of the recursive call at each level we will revert the changes
+        bool[rowB-row][colB-col]=true;
 
         check.addAll(pathDown);
         check.addAll(pathRight);
