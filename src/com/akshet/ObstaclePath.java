@@ -11,6 +11,23 @@ public class ObstaclePath {
 
     public static ArrayList<String> helperFunction(int row, int col, int rowObs, int colObs, String s) {
         ArrayList<String> path = new ArrayList<>();
+        if(row ==1 && col==1){
+            path.add(s);
+            return path;
+        }
+        if(row==rowObs && col==colObs){
+            return path;
+        }
+        ArrayList<String> Horizontal = new ArrayList<>();
+        ArrayList<String> Vertical = new ArrayList<>();
+        if(col>1) {
+        Horizontal = helperFunction(row, col - 1, rowObs, colObs, s + "R");
+        }
+        if(row>1){
+        Vertical = helperFunction(row-1, col, rowObs, colObs, s + "D");
+        }
+        path.addAll(Horizontal);
+        path.addAll(Vertical);
 
         return path;
     }
