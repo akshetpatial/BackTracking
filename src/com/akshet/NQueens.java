@@ -46,9 +46,10 @@ public class NQueens {
                 return false;
             }
         }
-        // No need to check right and left as they are already covered
+
+       // No need to check right and left as they are already covered
       // checking left
-        for (int i = 0; i < col; i++) {
+       /* for (int i = 0; i < col; i++) {
             if (board[row][i]) {
                 return false;
             }
@@ -58,7 +59,7 @@ public class NQueens {
             if (board[row][i]) {
                 return false;
             }
-        }
+        }*/
 
         // checking first diagonal
         int maxLeft= Math.min(row,col);
