@@ -87,7 +87,7 @@ public class NQueens {
          int col = scan.nextInt();
 
 
-        // If you want your boolean array to be false by default then use bool not Boolean
+        // If you want your boolean array to be false by default then use boolean not Boolean
         // because Boolean wrapper class has three value true, false and Null whereas boolean has only two
         boolean[][] board = new boolean[row][col];
 
