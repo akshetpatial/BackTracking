@@ -10,6 +10,9 @@ public class Sudoku {
         }
     }
 
+    // The Time complexity is O( 9^ (N^2)) as we are putting value at each index that is N * N and we are adding form 1 to 9 values
+    // The Space complexity is O(N^2)
+
 //    public static void helperFunction(char[][] board, int row, int col) {
       public static boolean helperFunction(char[][] board) {
 
